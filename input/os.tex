@@ -1,0 +1,41 @@
+\usepackage{pdftexcmds}
+\usepackage{catchfile}
+\usepackage{ifluatex}
+\usepackage{ifplatform}
+
+\iflinux
+%\setCJKmainfont{PMingLiU}
+%\setCJKmainfont{SimSun}
+%\setCJKmainfont{NSimSong}
+%\setmainfont{Century Schoolbook L}
+%\setmainfont{Plantagenet Cherokee}
+%\setmathfont{Latin Modern Math}
+\setmonofont{Nimbus Mono L:style=Bold}
+%\setmonofont{TlwgMono:style=Bold}
+%\setmonofont{DejaVu Sans Mono:style=Book}
+\fi
+
+\ifwindows
+\setCJKmainfont[BoldFont=SimHei]{SimSun}
+\setCJKmonofont{SimSun} % defaul chinese font
+%\setmainfont{Cambria}
+%\setmonofont{Inconsolata}
+%\setmathrm{Cambria Math}
+%\setsansfont{Calibri}
+\fi
+
+\ifmacosx
+%\setCJKmainfont[BoldFont=SimHei]{SimSun}
+%\setCJKmainfont{STSong} % defaul chinese font
+%\setCJKmonofont{STFangsong}
+%\setCJKmainfont{PMingLiU-CN}
+\setCJKmainfont[Path=/Users/tanbiao/Library/Fonts/]{PMingLiU-CN.ttf}
+%\setCJKmainfont{Songti TC}
+%\setmonofont{Menlo}
+%\setmainfont{Plantagenet Cherokee}
+%\setmainfont[Scale=MatchUppercase]{Athelas}
+\setmonofont{Courier New}
+%\setmainfont{Apple Chancery} % beauty
+%\setmainfont{PilGi} % beauty but can not reading...
+%\setmainfont{Futura}
+\fi
